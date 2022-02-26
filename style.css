@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  background: brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 2px;
+}
+.menu{
+  flex: 1;
+  text-align: right;
+
+}
+.menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.menu ul li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #FFBE33;
+  display: block;
+  margin: auto;
+  transition: all 0.2s ease 0s;
+}
+.menu ul li a:hover::after{
+  width: 100%;
+}
+.menu ul li a:hover{
+  color: #FFBE33;
+}
+.banner{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.5)),url(banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.text{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text h1{
+  font-size: 100px;
+}
+.text h1 span{
+  color:black;
+}
+.text p{
+  margin: 10px 0 40px;
+  font-size: 30px;
+}
+.text button a {
+  text-decoration: none;
+  color: white;
+}
+.text button{
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  border-radius: 8px;
+  transition: ease out 0.3s;
+  font-style: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.text button:hover{
+  cursor: pointer;
+  background-color: DodgerBlue;
+}
+
+  .dogs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.variety{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  transition: 0.5s;
+
+}
+.variety img{
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+}
+.variety:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.gallery{
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 40%;
+}
+.gallery h3{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.box{
+  display: block;
+  float: left;
+  width: 23%;
+  padding: 10px;
+  padding-left: 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.box .center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box img{
+  width: 100%;
+  border-radius: 8px;
+  height: 250px;
+  opacity: 40%;
+}
+.box img:hover{
+  transform: scale(1.2,1.2);
+  transition: 0.5s transform;
+  opacity: 1;
+}
+.register{
+  margin-left: 30px;
+  margin-right: 30px;
+  background: url(back.jpg);
+  background-size: cover;
+  height: 100vh;
+
+}
+.register h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  text-align: center;
+  color: #fff;
+
+}
+.register p{
+  text-align: center;
+  color: #fff;
+}
+.regform{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  padding-bottom: 10px;
+  height: 500px;
+
+}
+
+.regform form{
+  /*flex: 1 1 40rem;*/
+  flex: 0.3 0.5 30px;
+  padding: 1.2rem 3rem;
+  border: 0.2rem solid brown;
+  box-shadow: 0.5rem 0.5rem rgba(226, 0, 0, 0.5);
+  border-radius: 10px;
+  background: transparent;
+}
+.regform form .head{
+  text-align: left;
+  padding: 0;
+  padding-bottom: 1rem;
+
+}
+.regform form .inputbox{
+  position: relative;
+}
+.regform form .inputbox input, .regform form .inputbox textarea{
+  width: 100%;
+  background: black;
+  color: #fff;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+
+
+}
+.regform form .inputbox textarea{
+  resize: none;
+  height: 5rem;
+
+}
+
+::placeholder{
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffe4e1;
+  transition: 0.2s linear;
+}
+.register .regform form .btn{
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: red;
+  border-radius: 8px;
+  transition: ease out 0.3s;
+  font-style: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.register .regform form .btn:hover{
+  cursor: pointer;
+  background-color: DodgerBlue;
+}
+.footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: brown;
+  text-align: center;
+}
+.foot{
+  display: flex;
+
+}
+.foot .box{
+  flex-basis: 50%;
+
+  margin-top: 2%;
+  justify-content: space-between;
+}
+.foot .box li{
+  list-style: none;
+  text-align: flex;
+}
+.foot h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+
+
+}
+.box i{
+  margin-right: 5px;
+}
+.foot p span{
+  color: yellow;
+  padding-left: 5px;
+}
+.foot p{
+  font-size: 1rem;
+  font-weight: 300;
+}
